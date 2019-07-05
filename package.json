@@ -27,6 +27,10 @@
   },
   "homepage": "https://github.com/TradingPal/react-native-highcharts#readme",
   "dependencies": {
+    "escape-string-regexp": "^2.0.0",
+    "invariant": "^2.2.4",
+    "js-tokens": "^5.0.0",
+    "loose-envify": "^1.4.0",
     "react-native-webview": "^5.12.1"
   }
 }
