@@ -79,16 +79,15 @@ class ChartWeb extends Component {
         return (
           <View style={this.props.style}>
               <WebView
+                  {...this.props}
                   onLayout={this.reRenderWebView}
                   style={styles.full}
                   source={{ html: concatHTML, baseUrl: 'web/' }}
-                  javaScriptEnabled={true}
-                  domStorageEnabled={true}
-                  scalesPageToFit={true}
+                  javaScriptEnabled
+                  domStorageEnabled
                   scrollEnabled={false}
-                  automaticallyAdjustContentInsets={true}
+                  automaticallyAdjustContentInsets
                   useWebKit
-                  {...this.props}
               />
           </View>
         );
